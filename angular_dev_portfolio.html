@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of an Angular Front-End Developer specialized in building modern, responsive web applications"
+    />
+    <meta
+      name="keywords"
+      content="Angular Developer, Front-End Developer, TypeScript, JavaScript, Web Development"
+    />
+    <title>Faiza Ahmed - Angular Front-End Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loading" id="loading">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav>
+      <a href="#home" class="logo">FA</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
+        <li><a href="#about" data-en="About" data-ar="عنّي">About</a></li>
+        <li>
+          <a href="#skills" data-en="Skills" data-ar="المهارات">Skills</a>
+        </li>
+        <li>
+          <a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a>
+        </li>
+        <li>
+          <a href="#experience" data-en="Experience" data-ar="الخبرة"
+            >Experience</a
+          >
+        </li>
+        <li>
+          <a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
+        </li>
+        <li class="lang-selector">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ar">AR</button>
+        </li>
+        <li>
+          <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+      <button class="mobile-toggle" id="mobileToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="particles" id="particles"></div>
+      <div class="hero-content">
+        <p
+          class="hero-greeting"
+          data-en="Hi, my name is Faiza Ahmed"
+          data-ar=" مرحباً، اسمي فايزة أحمد"
+        >
+          Hi, my name is
+        </p>
+        <h1 class="hero-name" data-en="Faiza Ahmed" data-ar="فايزة أحمد ">
+          Faiza Ahmed
+        </h1>
+        <h2
+          class="hero-title"
+          data-en="Angular Front-End Developer"
+          data-ar="مطور واجهات أمامية - Angular"
+        >
+          Angular Front-End Developer
+        </h2>
+        <p
+          class="hero-tagline"
+          data-en="I build exceptional digital experiences with clean code, modern design, and performance-first mindset"
+          data-ar="أقوم ببناء تجارب رقمية استثنائية بكود نظيف، تصميم عصري، وأداء متميز"
+        >
+          I build exceptional digital experiences with clean code, modern
+          design, and performance-first mindset
+        </p>
+        <div class="hero-buttons">
+          <a
+            href="#projects"
+            class="btn btn-primary"
+            data-en="View My Work"
+            data-ar="شاهد أعمالي"
+          >
+            <i class="fas fa-code"></i>
+            <span>View My Work</span>
+          </a>
+          <a
+            href="#contact"
+            class="btn btn-secondary"
+            data-en="Hire Me"
+            data-ar="وظفني"
+          >
+            <i class="fas fa-envelope"></i>
+            <span>Hire Me</span>
+          </a>
+          <a
+            href="#"
+            class="btn btn-secondary"
+            id="downloadResume"
+            data-en="Download CV"
+            data-ar="تحميل السيرة الذاتية"
+          >
+            <i class="fas fa-download"></i>
+            <span>Download CV</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+      <h2 class="section-title" data-en="About Me" data-ar="عنّي">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p
+            data-en="Hello! I'm Faiza Ahmed, a passionate Angular Front-End Developer with a keen eye for creating beautiful, intuitive, and performant web applications. and I've been obsessed with crafting pixel-perfect user interfaces ever since."
+            data-ar="مرحباً! أنا فايزة مطورة واجهات أمامية متخصصة في Angular مع شغف كبير لإنشاء تطبيقات ويب جميلة وسهلة الاستخدام وعالية الأداء  "
+          >
+            Hello! I'm Faiza Ahmed, a passionate Angular Front-End Developer
+            with a keen eye for creating beautiful, intuitive, and performant
+            web applications. I've been obsessed with crafting pixel-perfect
+            user interfaces ever since.
+          </p>
+          <p
+            data-en="I specialize in building responsive, accessible, and user-centric web applications using Angular, TypeScript, and modern front-end technologies. I believe that great design and clean code go hand in hand, and I strive to deliver both in every project I work on."
+            data-ar="أتخصص في بناء تطبيقات ويب متجاوبة، سهلة الوصول، ومركزة على المستخدم باستخدام Angular وTypeScript والتقنيات الحديثة. أؤمن أن التصميم الرائع والكود النظيف يسيران جنباً إلى جنب."
+          >
+            I specialize in building responsive, accessible, and user-centric
+            web applications using Angular, TypeScript, and modern front-end
+            technologies. I believe that great design and clean code go hand in
+            hand, and I strive to deliver both in every project I work on.
+          </p>
+          <p
+            data-en="When I'm not coding, you'll find me exploring new web technologies, contributing to open-source projects, or mentoring aspiring developers."
+            data-ar="عندما لا أكون في البرمجة، تجدني أستكشف تقنيات ويب جديدة، أساهم في مشاريع مفتوحة المصدر، أو أرشد المطورين الطموحين."
+          >
+            When I'm not coding, you'll find me exploring new web technologies,
+            contributing to open-source projects, or mentoring aspiring
+            developers.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="assets/img.png" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in">
+      <h2
+        class="section-title"
+        data-en="Technical Skills"
+        data-ar="المهارات التقنية"
+      >
+        Technical Skills
+      </h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-header">
+            <i class="fab fa-angular skill-icon"></i>
+            <span class="skill-name">Angular</span>
+          </div>
+          <div class="skill-bar">
+            <div
+              class="skill-progress"
+              data-progress="90"
+              style="width: 0%"
+            ></div>
+          </div>
+          <span class="skill-percentage">90%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <i class="fab fa-js skill-icon"></i>
+            <span class="skill-name">TypeScript</span>
+          </div>
+          <div class="skill-bar">
+            <div
+              class="skill-progress"
+              data-progress="85"
+              style="width: 0%"
+            ></div>
+          </div>
+          <span class="skill-percentage">85%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <i class="fab fa-js-square skill-icon"></i>
+            <span class="skill-name">JavaScript (ES6+)</span>
+          </div>
+          <div class="skill-bar">
+            <div
+              class="skill-progress"
+              data-progress="90"
+              style="width: 0%"
+            ></div>
+          </div>
+          <span class="skill-percentage">90%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <i class="fab fa-html5 skill-icon"></i>
+            <span class="skill-name">HTML5</span>
+          </div>
+          <div class="skill-bar">
+            <div
+              class="skill-progress"
+              data-progress="97"
+              style="width: 0%"
+            ></div>
+          </div>
+          <span class="skill-percentage">97%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <i class="fab fa-css3-alt skill-icon"></i>
+            <span class="skill-name">CSS3 / SCSS</span>
+          </div>
+          <div class="skill-bar">
+            <div
+              class="skill-progress"
+              data-progress="93"
+              style="width: 0%"
+            ></div>
+          </div>
+          <span class="skill-percentage">93%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <i class="fas fa-plug skill-icon"></i>
+            <span class="skill-name">REST APIs</span>
+          </div>
+          <div class="skill-bar">
+            <div
+              class="skill-progress"
+              data-progress="88"
+              style="width: 0%"
+            ></div>
+          </div>
+          <span class="skill-percentage">88%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <i class="fab fa-git-alt skill-icon"></i>
+            <span class="skill-name">Git & GitHub</span>
+          </div>
+          <div class="skill-bar">
+            <div
+              class="skill-progress"
+              data-progress="85"
+              style="width: 0%"
+            ></div>
+          </div>
+          <span class="skill-percentage">85%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <i class="fas fa-mobile-alt skill-icon"></i>
+            <span class="skill-name">Responsive Design</span>
+          </div>
+          <div class="skill-bar">
+            <div
+              class="skill-progress"
+              data-progress="94"
+              style="width: 0%"
+            ></div>
+          </div>
+          <span class="skill-percentage">94%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <i class="fas fa-bootstrap skill-icon"></i>
+            <span class="skill-name">Bootstrap</span>
+          </div>
+          <div class="skill-bar">
+            <div
+              class="skill-progress"
+              data-progress="87"
+              style="width: 0%"
+            ></div>
+          </div>
+          <span class="skill-percentage">87%</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in">
+      <h2
+        class="section-title"
+        data-en="Featured Projects"
+        data-ar="المشاريع المميزة"
+      >
+        Featured Projects
+      </h2>
+      <div class="projects-grid">
+        <!-- Project 1-->
+        <div class="project-card">
+          <div
+            class="project-image"
+            style="
+              background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            "
+          >
+            <i class="fas fa-tasks"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Task Management App</h3>
+            <p class="project-description">
+              An intuitive task management application with drag-and-drop
+              functionality, real-time updates, and team collaboration features
+              powered by Angular.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Angular</span>
+              <span class="tech-badge">TypeScript</span>
+              <span class="tech-badge">Angular CDK</span>
+              <span class="tech-badge">Firebase</span>
+              <span class="tech-badge">Material UI</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div
+            class="project-image"
+            style="
+              background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            "
+          >
+            <i class="fas fa-utensils"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Recipe Finder App</h3>
+            <p class="project-description">
+              A modern recipe discovery application with search, filters,
+              favorites, and meal planning features. Integrated with external
+              recipe API.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Angular</span>
+              <span class="tech-badge">TypeScript</span>
+              <span class="tech-badge">REST API</span>
+              <span class="tech-badge">RxJS</span>
+              <span class="tech-badge">CSS Grid</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div
+            class="project-image"
+            style="
+              background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            "
+          >
+            <i class="fas fa-blog"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Blogging Platform</h3>
+            <p class="project-description">
+              A feature-rich blogging platform with markdown editor, tags,
+              comments, and user authentication built with Angular and modern
+              design patterns.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Angular</span>
+              <span class="tech-badge">TypeScript</span>
+              <span class="tech-badge">Markdown</span>
+              <span class="tech-badge">Guards</span>
+              <span class="tech-badge">Interceptors</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Education Timeline -->
+    <section id="experience" class="fade-in">
+      <h2
+        class="section-title"
+        data-en="Experience & Education"
+        data-ar="الخبرة والتعليم"
+      >
+        Experience & Education
+      </h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="timeline-date">2024 - present</div>
+            <h3 class="timeline-title">Front-End Developer</h3>
+            <p>
+              Developed responsive web applications using Angular, collaborated
+              with UX designers, and optimized application performance for
+              better user experience.
+            </p>
+          </div>
+          <div class="timeline-icon">
+            <i class="fas fa-code"></i>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="timeline-date">2020 - 2023</div>
+            <h3 class="timeline-title">Junior Developer</h3>
+            <p>
+              Contributed to various web projects, learned Angular framework,
+              implemented UI components, and participated in code reviews.
+            </p>
+          </div>
+          <div class="timeline-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="timeline-date">2016 - 2020</div>
+            <h3 class="timeline-title">Bachelor's in Computer Science</h3>
+            <p class="timeline-subtitle">Cairo University</p>
+            <p>
+              Graduated with honors. Focused on web technologies, software
+              engineering principles, and data structures. Completed senior
+              project on web application development.
+            </p>
+          </div>
+          <div class="timeline-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+      <h2 class="section-title" data-en="Get In Touch" data-ar="تواصل معي">
+        Get In Touch
+      </h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope contact-icon"></i>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <p>faizanasef@email.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone contact-icon"></i>
+            <div class="contact-details">
+              <h3>Phone</h3>
+              <p>+20 1092156180</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt contact-icon"></i>
+            <div class="contact-details">
+              <h3>Location</h3>
+              <p>Cairo, Egypt</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a
+              href="https://github.com/faizanasef"
+              class="social-link"
+              title="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/faiza-ahmed-a73564139?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="social-link"
+              title="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy; 2025 Faiza Ahmed . Built with passion and Angular. All rights
+        reserved.
+      </p>
+    </footer>
+    <script src="java.js"></script>
+  </body>
+</html>
